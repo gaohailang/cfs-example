@@ -1,0 +1,20 @@
+<template name="layout">
+  {{> header}}
+  <div class="container">
+    {{> yield}}
+  </div>
+</template>
+
+<template name="header">
+  <nav class="nvabar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">CollectionFS Demo</a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="{{pathFor 'images'}}">Images</a></li>
+        <!-- <li class="{{activeRoute 'autoformExample'}}"><a href="{{pathFor 'autoformExample'}}">AutoForm</a></li> -->
+      </ul>
+    </div>
+  </nav>
+</template>

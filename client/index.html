@@ -1,0 +1,27 @@
+<head>
+  <title>CollectionFS Example App</title>
+</head>
+
+<body>
+</body>
+
+<template name="not_found">
+    <p>Sorry, the page you requested doesn't exist! Choose a page from the menu.</p>
+</template>
+
+<template name="loading">
+    {{> spinner}}
+</template>
+
+<template name="home">
+  {{> loginButtons}}
+</template>
+
+<template name="upDown">
+  <div>
+    <button type="button" class="btn btn-xs resumeUploads">Resume All Uploads</button>
+    <button type="button" class="btn btn-xs pauseUploads">Pause All Uploads</button>
+    <button type="button" class="btn btn-xs cancelUploads">Cancel All Uploads</button>
+  </div>
+  {{> FS.UploadProgressBar}}
+</template>
